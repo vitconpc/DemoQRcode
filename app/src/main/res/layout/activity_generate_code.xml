@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="@dimen/dp_16"
+    tools:context=".GenerateCodeActivity">
+
+    <EditText
+        android:id="@+id/edt_data"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter your data"
+        android:padding="@dimen/dp_10" />
+
+    <Button
+        android:layout_marginTop="@dimen/dp_10"
+        android:onClick="generateCode"
+        android:text="Generate Code"
+        android:paddingHorizontal="@dimen/dp_10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/holo_blue_light"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white" />
+    <ImageView
+        android:id="@+id/image_view"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/dp_24"
+        android:layout_width="@dimen/dp_300"
+        android:layout_height="300dp" />
+</LinearLayout>
